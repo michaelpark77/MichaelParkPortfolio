@@ -9,13 +9,53 @@ body{
     justify-content:center; */
     background:#f1f1f1;
 }
+header{
+    background-color:white;
+    height:60px;
+    margin-bottom:20px;
+    display:flex;
+}
+.logo{
+    flex:1;
+    display:flex;
+    align-items: center;
+    padding-left:20px;
+}
+.logo a{
+    color:#004d90; 
+    font-size:30px;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+}
+.menu-wrap{
+    flex:1;
+    display:flex;
+    justify-content: flex-end;
+    
+}
 
+.menu{
+    display:flex;
+    align-items:center
+}
+.menu-item{
+    list-style:none;
+    padding-right:20px;
+    
+}
+.menu-item a{
+    font-size:18px;
+    letter-spacing:3px;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    color:#333;
+}
 .page-divider{
     margin-top:20px;
 }
 .container{
     display:flex;
-    width:900px;
+    width:1000px;
     margin-left:auto;
     margin-right:auto;
     padding-right:20px;
@@ -48,7 +88,14 @@ body{
     font-size:20px;
     font-weight:bold;
 }
-
+.contact{
+    padding-top:5px;
+}
+.addr {
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:14px
+}
 
 #resume-section{
     flex:5;
