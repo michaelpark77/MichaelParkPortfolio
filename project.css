@@ -71,10 +71,14 @@ main{
     text-decoration: none;
     margin-bottom:20px;
 }
+.pro-img-content{
+    margin-bottom:20px;
+}
 .pro-img{
     height:260px;
-    background-size:auto 100%;
-
+    /* background-size:auto 100%; */
+    background-repeat: no-repeat;
+    background-size: cover
 }
 .pro-img-title-wrap{
     padding-left:15px;
@@ -82,7 +86,7 @@ main{
     
     
     font-size:20px;
-    background-color:rgb(81,190,150);
+    ;
     text-decoration: none;
 
     color:white;
@@ -95,5 +99,35 @@ main{
 }
 .pro-img-intro{
     font-size:14px;
-    padding-bottom:5px;
+    padding-bottom:10px;
+}
+
+@media screen and (min-width:640px){
+    .pro-list{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around
+    }
+    .pro-img-item{
+        width:45%;
+
+    }
+}
+@media screen and (min-width:1024px){
+    .pro-wrap{
+        display:block;
+        flex:1
+    }
+    .pro-list{
+        
+        flex-direction:column;
+    }
+
+    .pro-img-wrap{
+        flex:2
+    }
+    .pro-img-item{
+        display:none;
+    }
+
 }
