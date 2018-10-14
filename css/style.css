@@ -1,55 +1,4 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-}
 
-body{
-    /* display:flex;
-    justify-content:center; */
-    background:#f1f1f1;
-}
-header{
-    background-color:white;
-    height:60px;
-    margin-bottom:20px;
-    display:flex;
-}
-.logo{
-    flex:1;
-    display:flex;
-    align-items: center;
-    padding-left:20px;
-}
-.logo a{
-    color:#004d90; 
-    font-size:30px;
-    font-family: 'Poiret One', cursive;
-    text-decoration: none;
-}
-.menu-wrap{
-    flex:1;
-    display:flex;
-    justify-content: flex-end;
-    
-}
-
-.menu{
-    display:flex;
-    align-items:center
-}
-.menu-item{
-    list-style:none;
-    padding-right:20px;
-    
-}
-.menu-item a{
-    font-size:18px;
-    letter-spacing:3px;
-    font-family: 'Poiret One', cursive;
-    text-decoration: none;
-    color:#333;
-}
 .page-divider{
     margin-top:20px;
 }
@@ -172,6 +121,19 @@ header{
     display:flex;
     flex-wrap:wrap;
 }
+.skill-section{
+    width:100%;
+    padding-bottom:10px;
+}
+.skill-section-title{
+    font-size:18px;
+    padding-bottom:5px;
+}
+.skill-item-wrap{
+    flex:1;
+    flex-wrap:wrap;
+    display:flex;
+}
 .skill-item{
     display:flex;
     width:50%;
@@ -179,6 +141,7 @@ header{
 }
 .skill-title{
     flex:1;
+    color:#414141;
 }
 .skill-grade{
     flex:2;
@@ -216,6 +179,10 @@ header{
     padding-top:20px;
     padding-bottom:10px;
 }
+.project-intro{
+    color:#414141;
+    padding-bottom:10px;
+}
 .port-content{
     padding-bottom:10px;
 }
@@ -244,6 +211,8 @@ header{
 .port-item .item-desc{
     padding-left:15px;
     padding-right:15px;
+    line-height:1.6em;
+    font-size:14px;
 }
 .port-item .item-pic{
     flex:1;
