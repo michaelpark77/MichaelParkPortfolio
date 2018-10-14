@@ -7,10 +7,14 @@
 body{
     /* display:flex;
     justify-content:center; */
-    background:#f1f1f1;
+    background:#fff;
 }
 header{
     background-color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
     height:60px;
     margin-bottom:20px;
     display:flex;
@@ -51,6 +55,7 @@ header{
     color:#333;
 }
 main{
+    padding-top:60px;
     display:flex;
 }
 .pro-wrap{
@@ -102,7 +107,9 @@ main{
     font-size:14px;
     padding-bottom:10px;
 }
-
+.pro-img-item-background{
+    display:none;
+}
 @media screen and (min-width:640px){
     .pro-list{
         display:flex;
@@ -115,20 +122,85 @@ main{
     }
 }
 @media screen and (min-width:1024px){
+    html{
+        height:100%;
+    }
+    body{
+        height:100%;
+    }
+    main {
+        height:calc(100% - 80px)
+    }
     .pro-wrap{
-        display:block;
-        flex:1
+        display:flex;
+        
+        flex:1;
+        height:100%;
+
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .pro-title-list{
+        flex-direction:column;
+        
+    }
+    
+    .pro-item{
+        text-align: right;
+        font-size:25px;
+        padding-top:10px;
+        padding-bottom:10px;
+        color:#004d90
+    }
+    .pro-item a{
+        color:#004d90;
+        font-family: 'Poiret One', cursive;
+        font-weight:400;
+    }
+    .pro-img-wrap{
+        flex:2;
     }
     .pro-list{
-        
-        flex-direction:column;
-    }
-
-    .pro-img-wrap{
-        flex:2
+        flex:1;
+        height:100%;
+        overflow:hidden;
+        position:relative;
     }
     .pro-img-item{
+        display:flex;
+        
+        position:absolute;
+        height:100%;
+        width:100%;
+        left:100%;
+        top:0;
+        
+        transition:left 1s;
+    }
+    .pro-img-item.active{
+        
+        justify-content: flex-end;
+        flex:1;
+        left:0;
+    }
+    .pro-img-content{
+        width:90%;
+        height:90%
+    }
+    .pro-img{
+        height:100%;
+    }
+    .pro-img-title-wrap{
         display:none;
     }
-
+    .pro-img-item-background{
+        display:block;
+        z-index:-1;
+        position:absolute; 
+        width:80%; 
+        height:100%;
+        right:0; 
+        top:0; 
+        bottom:0
+    }
 }
