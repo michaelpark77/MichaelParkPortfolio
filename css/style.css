@@ -65,6 +65,8 @@
 }
 .about-me-content{
     font-size:14px;
+    line-height:1.4em;
+    
 }
 #education{
 
@@ -238,3 +240,8 @@
         height:29.7cm;
     }
 } */
+
+
+#intro-section{
+    padding-left:20px;
+}
