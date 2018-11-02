@@ -106,8 +106,8 @@ main{
     }
     .pro-item a{
         color:#004d90;
-        font-family: 'Poiret One', cursive;
-        font-weight:400;
+        font-family: 'Orbitron', cursive;
+        font-weight:300;
     }
     .pro-item:hover a{
         font-weight:800;
