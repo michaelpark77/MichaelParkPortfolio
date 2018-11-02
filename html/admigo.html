@@ -7,6 +7,12 @@
         <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/portfolio.css" />
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        
     </head>
     <body>
         <header>
@@ -17,18 +23,41 @@
             </div>
             
             <div class="menu-wrap">
+                <div id="nav-icon3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 
-                <ul class="menu">
+                <ul id="header-menu" class="menu">
                     <li class="menu-item">
-                        <a href="../html/resume.html">Resume</a>
+                        <a href="./self-introduction.html">Self Introduction</a>
                     </li>
                     <li class="menu-item">
-                        <a href="../html/resume.html">
+                        <a href="./resume.html">Resume</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../index.html">
                             Projects
                         </a>
                     </li>
                 </ul>
             </div>
+            <script>
+                $("#nav-icon3").click(function(){
+                    
+                    var isActive = $("#header-menu").hasClass('active');
+                    if(isActive){
+                        $("#header-menu").removeClass('active');
+                        $("#background-layer").hide();
+                    }else{
+                        
+                        $("#header-menu").addClass('active');
+                        $("#background-layer").show();
+                    }
+                })
+            </script>
         </header>
         
         <div class="container">
@@ -164,6 +193,8 @@
             </div>
         </div>
         
-                
+        <div id="background-layer">
+
+        </div>      
     </body>
 </html>

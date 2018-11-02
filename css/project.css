@@ -109,6 +109,10 @@ main{
         font-family: 'Poiret One', cursive;
         font-weight:400;
     }
+    .pro-item:hover a{
+        font-weight:800;
+        text-decoration: underline
+    }
     .pro-img-wrap{
         flex:2;
     }
